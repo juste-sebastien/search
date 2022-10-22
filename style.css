@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgb(13, 13, 13);
+  color: white;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+header a {
+  text-decoration: none;
+  padding: 10px;
+  font-size: 0.8em;
+}
+header a:visited {
+  color: #696969;
+}
+header #advanced_title {
+  font-size: 2em;
+  position: absolute;
+  left: 20px;
+  margin: 0;
+}
+
+body {
+  margin: 0 5%;
+}
+
+h1 {
+  text-align: center;
+  font-size: 5em;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.container {
+  width: 80vw;
+  height: 15vh;
+  margin: 15px auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: center;
+}
+.container .search_field {
+  min-width: 100%;
+  height: 40px;
+  border-radius: 50px;
+  border: 1px solid #696969;
+  padding-left: 20px;
+  font-size: 1em;
+}
+.container .search_field:hover {
+  background-color: rgba(105, 105, 105, 0.4);
+}
+.container input[type=submit] {
+  height: 40px;
+  width: 20%;
+  border-radius: 5px;
+  margin: 30px 5px;
+  background-color: #696969;
+}
+.container input[type=submit]:hover {
+  border-color: #696969;
+}
+
+h2 {
+  color: lightcoral;
+  font-size: 1.1em;
+  margin: 5% 0;
+}
+
+#advanced_container {
+  width: 80vw;
+  font-size: 0.8em;
+  color: white;
+  display: grid;
+  grid-template-columns: 30% 30% 10% 30%;
+  row-gap: 5vh;
+}
+#advanced_container .semi_advanced_field, #advanced_container input[type=submit], #advanced_container .advanced_field {
+  border: 1px solid #696969;
+  height: 4vh;
+}
+#advanced_container .advanced_field {
+  grid-column: 2/span 3;
+}
+#advanced_container label, #advanced_container #mid_label {
+  align-self: center;
+}
+#advanced_container #mid_label {
+  text-align: center;
+}
+#advanced_container input[type=submit] {
+  grid-column-start: 4;
+  background-color: lightsteelblue;
+  color: darkblue;
+}
+#advanced_container input[type=submit]:hover {
+  background-color: lightblue;
+  border: 1px solid lightsteelblue;
+}
+
+/*# sourceMappingURL=style.css.map */

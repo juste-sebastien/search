@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="style.css" rel="stylesheet" />
+        <title>Cabroogle Search</title>
+    </head>
+    <header>
+        <h1 id="advanced_title">Cabroogle</h1>
+        <a href="index.html">Go Back</a>
+    </header>
+    <body>
+        <h2>Advanced Search</h2>
+        <p>Find pages with...</p>
+        <form action="https://google.com/search">
+            <div id="advanced_container">
+                <label for="as_q">all these words:</label>
+                <input type="text" class="advanced_field" name="as_q" />
+                <label for="as_epq">these exact words or phrase:</label>
+                <input type="text" class="advanced_field" name="as_epq" />
+                <label for="as_oq">any of these words:</label>
+                <input type="text" class="advanced_field" name="as_oq" />
+                <label for="as_cq">none of these words:</label>
+                <input type="text" class="advanced_field" name="as_cq" />
+                <label for="as_nlo">numbers includes between</label>
+                <input type="text" class="semi_advanced_field" name="as_nlo" />
+                <label id="mid_label" for="as_nhi">and</label>
+                <input type="text" class="semi_advanced_field" name="as_nhi" />
+                <input type="submit" value="Advanced Search" />
+            </div>
+        </form>
+    </body>
+</html>
